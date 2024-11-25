@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 3;
+  padding: 0;
+}
+header.logo-icon {
+  width: 60px;
+  height: 105px;
+}
+
+header .containeer {
+  height: 120px;
+
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .logo h1 {
+  text-transform: capitalize;
+  font-size: 32px;
+  height: 40px;
+  font-weight: 200;
+  font-family: sans-serif;
+  line-height: 40px;
+  color: white;
+  font-family: Black Mango;
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 40px;
+  text-align: left;
+}
+header ul li:not(:last-child) {
+  text-transform: capitalize;
+}
+header nav {
+  transition: 0.3s;
+}
+
+header nav ul {
+  gap: 35px;
+}
+header nav ul li {
+  line-height: 25px;
+}
+
+header nav ul li a {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+header .phone-logo {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  header .containeer {
+    width: 95%;
+  }
+  header .logo-icon {
+    display: none;
+  }
+  header .phone-logo {
+    display: block;
+  }
+  nav {
+    position: absolute;
+    width: 90%;
+    top: -100rem;
+    transform: translateX(5%);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  header .logo h1 {
+    font-size: 24px;
+  }
+  header nav ul {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 15px;
+  }
+  .menu {
+    font-size: 32px;
+    transition: 0.3s;
+  }
+  header nav ul li a {
+    color: black;
+  }
+  .open {
+    top: 6rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    width: 100%;
+  }
+  header .containeer {
+    width: 100%;
+    padding-right: 10px;
+    position: relative;
+  }
+  header nav ul {
+    gap: 20px;
+  }
+  header .logo h1 {
+    font-size: 24px;
+  }
+
+  .menu {
+    display: none;
+  }
+}

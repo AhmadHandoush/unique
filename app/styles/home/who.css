@@ -1,0 +1,47 @@
+.who {
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .who {
+    flex-direction: row;
+    height: 621px;
+  }
+}
+
+.who .question {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 16px;
+}
+
+.who .question .first {
+  width: 100%;
+  max-width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 16px;
+}
+
+.who .image {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  background-color: blue;
+}
+
+@media (min-width: 640px) {
+  .who .image {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .who .image {
+    width: 50%;
+    height: 100%;
+  }
+}

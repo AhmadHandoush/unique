@@ -1,0 +1,137 @@
+.selections {
+  margin-top: 2rem;
+  height: 90vh;
+}
+.selections .villas {
+  height: 90%;
+  background-color: red;
+}
+.selections .villas .swipper {
+  height: 100%;
+}
+/* .selections .custom-navigation {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.selections .prev-btn,
+.selections .next-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid rgba(192, 192, 100, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selections .prev-btn svg,
+.selections .next-btn svg {
+  font-size: 20px;
+  color: #555;
+}
+
+.selections .prev-btn:hover,
+.selections .next-btn:hover {
+  border: 1px solid #1d6196;
+}
+.selections .prev-btn:hover svg,
+.selections .next-btn:hover svg {
+  color: #1d6196;
+} */
+.component {
+  position: relative;
+}
+.component .image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.component .compo-content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.component .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.component .name {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 72px;
+}
+.component .location {
+  font-weight: 400;
+  font-size: 24px;
+}
+.component .short-des {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+.compo-content .explore {
+  width: 170px;
+  height: 56px;
+  border-radius: 40px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.compo-content .explore span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3px;
+}
+@media only screen and (max-width: 768px) {
+  .selections {
+    height: 60vh;
+  }
+  .selections .name {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 20px;
+  }
+  .selections .location {
+    font-size: 16px;
+  }
+  .selections .short-des {
+    line-height: 20px;
+  }
+  .compo-content .explore {
+    width: 30%;
+    height: 40px;
+  }
+  .selections .compo-content {
+    gap: 5px;
+  }
+  .compo-content .loc svg {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .selections {
+    height: 60vh;
+  }
+  .selections .compo-content {
+    top: 30%;
+  }
+}
